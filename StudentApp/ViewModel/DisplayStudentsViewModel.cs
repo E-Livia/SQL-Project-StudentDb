@@ -139,20 +139,6 @@ namespace StudentApp.ViewModel
             App.Current.MainWindow = addView;
             addView.Show();
         }
-        private ICommand orderbyCommand;
-        private ICommand OrderByCommand
-        {
-            get
-            {
-                if (backCommand == null)
-                {
-                    backCommand = new RelayCommands(OrderByMethod);
-                }
-                return backCommand;
-            }
-        }
-        private void OrderByMethod(object param)
-        {
-        }
+        
     }
 }

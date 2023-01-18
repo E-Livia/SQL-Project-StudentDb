@@ -164,5 +164,6 @@
     </FunctionImportMapping>
     <FunctionImportMapping FunctionImportName="spStudentUpdate" FunctionName="dbPELModel.Store.spStudentUpdate" />
     <FunctionImportMapping FunctionImportName="spStudentInsert" FunctionName="dbPELModel.Store.spStudentInsert" />
+    <FunctionImportMapping FunctionImportName="spProfessorInsert" FunctionName="dbPELModel.Store.spProfessorInsert" />
   </EntityContainerMapping>
 </Mapping>

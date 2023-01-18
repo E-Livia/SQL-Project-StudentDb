@@ -26,3 +26,9 @@ D:\UNITBV\Anul III\Anul 3, Sem I\MSQL\Laboratoare\Lab 3\StudentApp\StudentApp\ob
 D:\UNITBV\Anul III\Anul 3, Sem I\MSQL\Laboratoare\Lab 3\StudentApp\StudentApp\obj\Debug\View\AddStudent.baml
 D:\UNITBV\Anul III\Anul 3, Sem I\MSQL\Laboratoare\Lab 3\StudentApp\StudentApp\obj\Debug\View\DisplayStudents.baml
 D:\UNITBV\Anul III\Anul 3, Sem I\MSQL\Laboratoare\Lab 3\StudentApp\StudentApp\obj\Debug\View\UpdateStudent.baml
+D:\UNITBV\Anul III\Anul 3, Sem I\MSQL\Laboratoare\Lab 3\StudentApp\StudentApp\obj\Debug\View\DisplayProfs.g.cs
+D:\UNITBV\Anul III\Anul 3, Sem I\MSQL\Laboratoare\Lab 3\StudentApp\StudentApp\obj\Debug\View\DisplayProfs.baml
+D:\UNITBV\Anul III\Anul 3, Sem I\MSQL\Laboratoare\Lab 3\StudentApp\StudentApp\obj\Debug\View\AddProf.g.cs
+D:\UNITBV\Anul III\Anul 3, Sem I\MSQL\Laboratoare\Lab 3\StudentApp\StudentApp\obj\Debug\View\UpdateProf.g.cs
+D:\UNITBV\Anul III\Anul 3, Sem I\MSQL\Laboratoare\Lab 3\StudentApp\StudentApp\obj\Debug\View\AddProf.baml
+D:\UNITBV\Anul III\Anul 3, Sem I\MSQL\Laboratoare\Lab 3\StudentApp\StudentApp\obj\Debug\View\UpdateProf.baml

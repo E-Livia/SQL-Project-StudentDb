@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:StudentApp"
         xmlns:viewModel="clr-namespace:StudentApp.ViewModel"
         mc:Ignorable="d"
-        Title="Student LivApp" Height="550" Width="800" WindowStartupLocation="CenterScreen">
+        Title="Student LivApp" Height="600" Width="800" WindowStartupLocation="CenterScreen">
     <Window.DataContext>
         <viewModel:MainWindowViewModel/>
     </Window.DataContext>
@@ -55,13 +55,15 @@
             <ColumnDefinition Width="45*"/>
             <ColumnDefinition Width="380*"/>
         </Grid.ColumnDefinitions>
-        <Label Grid.Row="0"  Content ="Aplicatie&#xa; Studenti" HorizontalContentAlignment="Center" 
+        <Label Grid.Row="0"  Content ="Welcome to Student LivApp" HorizontalContentAlignment="Center" 
             VerticalContentAlignment="Center" VerticalAlignment="Top" FontSize="60" Height="210" Grid.RowSpan="3" FontFamily="Sitka Display" Margin="10,10,1.667,0" Grid.ColumnSpan="6" FontWeight="Bold"/>
         <StackPanel Grid.Row="2" Orientation="Vertical" Grid.ColumnSpan="6" Margin="0,0.333,0.667,0">
             <Button Content="Profesori" Height="35" Margin="322,60,314,0"
-                    FontSize="20" Style="{StaticResource RoundedButtonStyle}" Command="{Binding AddCommand}" FontFamily="Segoe UI Emoji"/>
+                    FontSize="20" Style="{StaticResource RoundedButtonStyle}" Command="{Binding SeeProfCommand}" FontFamily="Segoe UI Emoji"/>
             <Button Content="Studenti" Height="35" Margin="322,30,314,0"
-                    FontSize="20" Style="{StaticResource RoundedButtonStyle}" Command="{Binding SeeCommand}" FontFamily="Segoe UI Emoji"/>
+                    FontSize="20" Style="{StaticResource RoundedButtonStyle}" Command="{Binding SeeStudentsCommand}" FontFamily="Segoe UI Emoji"/>
+            <Button Content="Catalog" Height="35" Margin="322,30,314,0"
+                    FontSize="20" Style="{StaticResource RoundedButtonStyle}" Command="{Binding SeeNotesCommand}" FontFamily="Segoe UI Emoji"/>
         </StackPanel>
     </Grid>
 </Window>

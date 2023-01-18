@@ -309,6 +309,13 @@
       <Parameter Name="Email" Mode="In" Type="String" />
       <Parameter Name="Active" Mode="In" Type="Boolean" />
     </FunctionImport>
+    <FunctionImport Name="spProfessorInsert">
+      <Parameter Name="FirstName" Mode="In" Type="String" />
+      <Parameter Name="LastName" Mode="In" Type="String" />
+      <Parameter Name="Cnp" Mode="In" Type="String" />
+      <Parameter Name="Telephone" Mode="In" Type="String" />
+      <Parameter Name="Active" Mode="In" Type="Boolean" />
+    </FunctionImport>
   </EntityContainer>
   <ComplexType Name="sp_helpdiagramdefinition_Result">
     <Property Type="Int32" Name="version" Nullable="true" />

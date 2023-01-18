@@ -64,17 +64,38 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\ProfLogic.cs" />
+    <Compile Include="Model\ProfModel.cs" />
+    <Compile Include="ViewModel\AddProfViewModel.cs" />
     <Compile Include="ViewModel\AddStudentViewModel.cs" />
     <Compile Include="ViewModel\BaseViewModel.cs" />
+    <Compile Include="ViewModel\DisplayProfsViewModel.cs" />
     <Compile Include="ViewModel\DisplayStudentsViewModel.cs" />
     <Compile Include="ViewModel\UpdateStudentViewModel.cs" />
+    <Compile Include="View\AddProf.xaml.cs">
+      <DependentUpon>AddProf.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DisplayProfs.xaml.cs">
+      <DependentUpon>DisplayProfs.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\DisplayStudents.xaml.cs">
       <DependentUpon>DisplayStudents.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UpdateProf.xaml.cs">
+      <DependentUpon>UpdateProf.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\UpdateStudent.xaml.cs">
       <DependentUpon>UpdateStudent.xaml</DependentUpon>
     </Compile>
+    <Page Include="View\AddProf.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\AddStudent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\DisplayProfs.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -164,6 +185,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\UpdateProf.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\UpdateStudent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

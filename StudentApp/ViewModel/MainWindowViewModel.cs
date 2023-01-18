@@ -11,19 +11,37 @@ namespace StudentApp.ViewModel
 {
     class MainWindowViewModel : BaseViewModel
     {
-        private ICommand seeCommand;
-        public ICommand SeeCommand
+        private ICommand seeStudentCommand;
+        public ICommand SeeStudentsCommand
         {
             get
             {
-                seeCommand = new RelayCommands(SeeMethod);
+                seeStudentCommand = new RelayCommands(SeeStudentsMethod);
 
-                return seeCommand;
+                return seeStudentCommand;
             }
         }
-        private void SeeMethod(object param)
+        private void SeeStudentsMethod(object param)
         {
             DisplayStudents seeView = new DisplayStudents();
+            App.Current.MainWindow.Close();
+            App.Current.MainWindow = seeView;
+            seeView.Show();
+
+        }
+
+        private ICommand seeProfCommand;
+        public ICommand SeeProfCommand
+        {
+            get
+            {
+                seeProfCommand = new RelayCommands(SeeProfMethod);
+                return seeProfCommand;
+            }
+        }
+        private void SeeProfMethod(object param)
+        {
+            DisplayProfs seeView = new DisplayProfs();
             App.Current.MainWindow.Close();
             App.Current.MainWindow = seeView;
             seeView.Show();

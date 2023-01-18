@@ -267,5 +267,30 @@ namespace StudentApp.Model
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spStudentInsert", groupeIdParameter, firstNameParameter, lastNameParameter, cnpParameter, emailParameter, activeParameter);
         }
+    
+        public virtual int spProfessorInsert(string firstName, string lastName, string cnp, string telephone, Nullable<bool> active)
+        {
+            var firstNameParameter = firstName != null ?
+                new ObjectParameter("FirstName", firstName) :
+                new ObjectParameter("FirstName", typeof(string));
+    
+            var lastNameParameter = lastName != null ?
+                new ObjectParameter("LastName", lastName) :
+                new ObjectParameter("LastName", typeof(string));
+    
+            var cnpParameter = cnp != null ?
+                new ObjectParameter("Cnp", cnp) :
+                new ObjectParameter("Cnp", typeof(string));
+    
+            var telephoneParameter = telephone != null ?
+                new ObjectParameter("Telephone", telephone) :
+                new ObjectParameter("Telephone", typeof(string));
+    
+            var activeParameter = active.HasValue ?
+                new ObjectParameter("Active", active) :
+                new ObjectParameter("Active", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spProfessorInsert", firstNameParameter, lastNameParameter, cnpParameter, telephoneParameter, activeParameter);
+        }
     }
 }

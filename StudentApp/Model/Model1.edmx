@@ -223,6 +223,13 @@
         <Function Name="spProfessorDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="ProfessorId" Type="int" Mode="In" />
         </Function>
+        <Function Name="spProfessorInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="FirstName" Type="nvarchar" Mode="In" />
+          <Parameter Name="LastName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Cnp" Type="varchar" Mode="In" />
+          <Parameter Name="Telephone" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
         <Function Name="spProfessorSelect" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="ProfessorId" Type="int" Mode="In" />
         </Function>
@@ -613,6 +620,13 @@
             <Parameter Name="Email" Mode="In" Type="String" />
             <Parameter Name="Active" Mode="In" Type="Boolean" />
           </FunctionImport>
+          <FunctionImport Name="spProfessorInsert">
+            <Parameter Name="FirstName" Mode="In" Type="String" />
+            <Parameter Name="LastName" Mode="In" Type="String" />
+            <Parameter Name="Cnp" Mode="In" Type="String" />
+            <Parameter Name="Telephone" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="sp_helpdiagramdefinition_Result">
           <Property Type="Int32" Name="version" Nullable="true" />
@@ -819,6 +833,7 @@
           </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="spStudentUpdate" FunctionName="dbPELModel.Store.spStudentUpdate" />
           <FunctionImportMapping FunctionImportName="spStudentInsert" FunctionName="dbPELModel.Store.spStudentInsert" />
+          <FunctionImportMapping FunctionImportName="spProfessorInsert" FunctionName="dbPELModel.Store.spProfessorInsert" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
