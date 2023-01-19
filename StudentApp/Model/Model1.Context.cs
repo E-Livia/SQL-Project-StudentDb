@@ -158,7 +158,7 @@ namespace StudentApp.Model
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spProfessorSelect_Result>("spProfessorSelect", professorIdParameter);
         }
     
-        public virtual int spProfessorUpdate(Nullable<int> professorId, string firstName, string lastName, string cnp, string telephone)
+        public virtual int spProfessorUpdate(Nullable<int> professorId, string firstName, string lastName, string cnp, string telephone, Nullable<bool> active)
         {
             var professorIdParameter = professorId.HasValue ?
                 new ObjectParameter("ProfessorId", professorId) :
@@ -180,7 +180,11 @@ namespace StudentApp.Model
                 new ObjectParameter("Telephone", telephone) :
                 new ObjectParameter("Telephone", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spProfessorUpdate", professorIdParameter, firstNameParameter, lastNameParameter, cnpParameter, telephoneParameter);
+            var activeParameter = active.HasValue ?
+                new ObjectParameter("Active", active) :
+                new ObjectParameter("Active", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spProfessorUpdate", professorIdParameter, firstNameParameter, lastNameParameter, cnpParameter, telephoneParameter, activeParameter);
         }
     
         public virtual int spStudentDelete(Nullable<int> studentId)

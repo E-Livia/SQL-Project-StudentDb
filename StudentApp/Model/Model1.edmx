@@ -239,6 +239,7 @@
           <Parameter Name="LastName" Type="nchar" Mode="In" />
           <Parameter Name="Cnp" Type="varchar" Mode="In" />
           <Parameter Name="Telephone" Type="nchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
         </Function>
         <Function Name="spStudentDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="StudentId" Type="int" Mode="In" />
@@ -595,6 +596,7 @@
             <Parameter Name="LastName" Mode="In" Type="String" />
             <Parameter Name="Cnp" Mode="In" Type="String" />
             <Parameter Name="Telephone" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
           </FunctionImport>
           <FunctionImport Name="spStudentDelete">
           <Parameter Name="StudentId" Mode="In" Type="Int32" />

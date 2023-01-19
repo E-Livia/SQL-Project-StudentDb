@@ -284,6 +284,7 @@
       <Parameter Name="LastName" Mode="In" Type="String" />
       <Parameter Name="Cnp" Mode="In" Type="String" />
       <Parameter Name="Telephone" Mode="In" Type="String" />
+      <Parameter Name="Active" Mode="In" Type="Boolean" />
     </FunctionImport>
     <FunctionImport Name="spStudentDelete">
       <Parameter Name="StudentId" Mode="In" Type="Int32" />

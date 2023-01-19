@@ -93,8 +93,8 @@ namespace StudentApp.ViewModel
         }
         private void StergeProfMethod(object param)
         {
-            studentDb.spStudentDelete(selectedProf.Id);
-            MessageBox.Show("Ai sters studentul :" + SelectedProf.Nume + " " + SelectedProf.Prenume);
+            studentDb.spProfessorDelete(selectedProf.Id);
+            MessageBox.Show("Ai sters profesorul :" + SelectedProf.Nume + " " + SelectedProf.Prenume);
             DisplayProfs Window = new DisplayProfs();
             App.Current.MainWindow.Close();
             App.Current.MainWindow = Window;

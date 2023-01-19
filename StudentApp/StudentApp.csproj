@@ -71,6 +71,7 @@
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\DisplayProfsViewModel.cs" />
     <Compile Include="ViewModel\DisplayStudentsViewModel.cs" />
+    <Compile Include="ViewModel\UpdateProfViewModel.cs" />
     <Compile Include="ViewModel\UpdateStudentViewModel.cs" />
     <Compile Include="View\AddProf.xaml.cs">
       <DependentUpon>AddProf.xaml</DependentUpon>
